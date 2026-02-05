@@ -57,6 +57,18 @@
       align-items: center;
     }
 
+    header .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header img{
+      height: 50px;
+      margin: 0;
+      padding: 0;
+    }
+
     header h1 {
       margin: 0;
       font-size: 24px;
@@ -163,13 +175,19 @@
 <body>
 
 <header>
-  <h1>TOMS3</h1>
-  <nav>
-    <a href="#about">Sobre el servidor</a>
-    <a href="#join">Cómo entrar</a>
-    <a href="https://x.com/tomsanarchy" target="_blank">X / Twitter</a>
-    <a href="https://discord.gg/KBG9CbC93S" target="_blank">Discord</a>
-  </nav>
+  <div class="header-left">
+    <img src="hd_logo.png" alt="">
+    <h1>TOMS3</h1>
+  </div>
+
+  <div class="header-right">
+    <nav>
+      <a href="#about">Sobre el servidor</a>
+      <a href="#join">Cómo entrar</a>
+      <a href="https://x.com/tomsanarchy" target="_blank">X / Twitter</a>
+      <a href="https://discord.gg/KBG9CbC93S" target="_blank">Discord</a>
+    <nav></nav>
+  </div>
 </header>
 
 <div class="hero">
@@ -189,7 +207,9 @@
   <p>
     Toms3 sigue la filosofía clásica de la anarquía en Minecraft.
     Todo está permitido: griefing, PvP, trampas, exploits y clientes modificados.
-    No existe ningún tipo de norma dentro del juego.
+    No existe ningún tipo de norma dentro del juego, ni tampoco penalizamos a aquellos jugadores que abusen de bugs o exploits.
+    <br><br>
+    Toms3 también dispone de dupes. En este momento, el dupe activo es el "1.15.2 Donkey Dupe".
   </p>
 </section>
 
