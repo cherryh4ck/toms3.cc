@@ -18,6 +18,9 @@
 
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <title>Toms3 Anarchy</title>
+
+  <!-- TODO: botones para copiar la ip? -->
+  <!-- osea de manera que se vea minimalista xd -->
   <style>
     :root {
       --bg: #050505;
@@ -113,17 +116,23 @@
     }
 
     @keyframes slide {
-      0%   { background-image: url('bg1.jpeg'); }
-      25%  { background-image: url('bg2.jpeg'); }
-      50%  { background-image: url('bg3.jpeg'); }
-      75% { background-image: url('bg4.jpeg'); }
-        100% { background-image: url('bg1.jpeg'); }
+      0%   { background-image: url('bg1.jpg'); }
+      25%  { background-image: url('bg2.jpg'); }
+      50%  { background-image: url('bg3.jpg'); }
+      75% { background-image: url('bg4.jpg'); }
+        100% { background-image: url('bg1.jpg'); }
     }
 
-    .hero h2 {
+    .hero h2{
       font-size: 48px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       letter-spacing: 2px;
+    }
+
+    .hero h3{
+      font-size: 22px;
+      letter-spacing: 2px;
+      margin: 0;
     }
 
     .hero p {
@@ -165,14 +174,58 @@
 
     footer {
       text-align: center;
-      padding: 50px 20px;
+      padding: 30px 20px; 
       color: var(--muted);
       font-size: 13px;
       border-top: 1px solid #111;
+      background: linear-gradient(to bottom, rgb(15, 14, 14), #050505); 
+    }
+
+    .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px; 
+    }
+
+    .copyright {
+      letter-spacing: 0.5px;
+      opacity: 0.8;
+    }
+
+    .credits {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+    }
+
+    .credits:hover {
+      opacity: 0.9;
+    }
+
+    .credits strong {
+      color: #fff; /* Resaltamos los nombres */
+      font-weight: 500;
+    }
+
+    .separator {
+      margin: 0 8px;
+      color: #333;
     }
   </style>
 </head>
 <body>
+
+<!--- precarga de los backgrounds para evitar c bug -->
+<div style="display: none;">
+  <img src="bg1.jpg">
+  <img src="bg2.jpg">
+  <img src="bg3.jpg">
+  <img src="bg4.jpg">
+</div>
 
 <header>
   <div class="header-left">
@@ -184,7 +237,8 @@
     <nav>
       <a href="#about">Sobre el servidor</a>
       <a href="#join">Cómo entrar</a>
-      <a href="https://x.com/tomsanarchy" target="_blank">X / Twitter</a>
+      <a href="https://vote.toms3.cc" target="_blank">Vótanos</a>
+      <a href="https://x.com/tomsanarchy" target="_blank">Twitter</a>
       <a href="https://discord.gg/KBG9CbC93S" target="_blank">Discord</a>
     <nav></nav>
   </div>
@@ -192,43 +246,54 @@
 
 <div class="hero">
   <div>
-    <h2>Servidor Anárquico de Minecraft</h2>
+    <h2>toms3.cc</h2>
+    <h3>Anárquico inspirado en 2b2t y Hisparquia</h3>
     <p>
       Toms3 es un servidor anárquico puro. Sin reglas, sin moderación,
       sin resets, aquí no existen los admins. El mundo es permanente
       y está controlado únicamente por los jugadores.
     </p>
-    <div class="ip">Java Edition 1.21.11 — IP: <strong>toms3.cc</strong></div>
+    <div class="ip">Java Edition — Versión: <strong>1.21.11</strong></div>
   </div>
 </div>
 
 <section id="about">
   <h3>¿Qué es Toms3?</h3>
   <p>
-    Toms3 sigue la filosofía clásica de la anarquía en Minecraft.
-    Todo está permitido: griefing, PvP, trampas, exploits y clientes modificados.
-    No existe ningún tipo de norma dentro del juego, ni tampoco penalizamos a aquellos jugadores que abusen de bugs o exploits.
+    Toms3 es un servidor anárquico de Minecraft hispano, inspirado en servidores como 2b2t y Hisparquia.
+    <br>
+    Existimos desde 2020 y en el pasado logramos construir por casi todo un año una comunidad pequeña pero activa. 
+    <br>
+    Y ahora, lo volvemos a hacer desde cero, con un nuevo mundo, un nuevo impulso, con un mayor presupuesto y con más experiencia.
     <br><br>
-    Toms3 también dispone de dupes. En este momento, el dupe activo es el "1.15.2 Donkey Dupe".
+    El servidor es fiel a lo que nosotros llamamos el "modelo anárquico clásico": un servidor sin reglas, sin comandos raros como /tpa o /home, sin filtros de chat, sin shadowbans, sin resets y sin intervención de admins.
+    <br><br>
+    Todo está permitido, incluido el griefing, el uso de hacks, exploits, dupeos, bypasses, etc. Toms3 no penaliza nada de eso. El servidor es un mundo abierto donde los jugadores pueden hacer lo que quieran, sin excepciones.
+    <br><br>
   </p>
 </section>
 
 <section id="join">
   <h3>Cómo entrar</h3>
   <p>
-    Usa Minecraft Java Edition y conéctate directamente al servidor.
-    No necesitas registro previo ni whitelist.
+    Usa Minecraft Java Edition y conéctate directamente al servidor con el cliente que quieras.
   </p>
 
   <div class="info">
-    <div>Versión: <strong>1.21.11</strong></div>
+    <div>Versión: <strong>1.16.5</strong> — <strong>1.21.11</strong></div>
     <div>IP: <strong>toms3.cc</strong></div>
-    <div>Modo: <strong>Anarquía total</strong></div>
   </div>
 </section>
 
 <footer>
-  © 2026 Toms3 — Servidor Anárquico de Minecraft
+  <div class="footer-content">
+    <p class="copyright">© 2026 Toms3 — Servidor Anárquico de Minecraft</p>
+    <div class="credits">
+      <span>Página web diseñada por <strong>Kurau</strong></span>
+      <span class="separator">|</span>
+      <span>Servidor administrado por <strong>Cherryh4ck</strong></span>
+    </div>
+  </div>
 </footer>
 
 </body>
