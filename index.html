@@ -260,15 +260,9 @@
 <script>
     async function getMCStatus() {
         const ip = "toms3.cc";
-        const response = await fetch(`https://api.mcsrvstat.us/2/${ip}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
+        const response = await fetch(`https://api.mcsrvstat.us/2/${ip}`);
         const data = await response.json();
 
-        
         const status = document.getElementById('status');
         const players = document.getElementById('jugadores');
 
