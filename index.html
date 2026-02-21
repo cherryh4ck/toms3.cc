@@ -274,7 +274,12 @@
 
         if (data.status === "success" && data.online) {
             statusEl.innerHTML = '<span style="color: #37d45c;">● Online</span> — ';
-            playersEl.innerHTML = `<strong>${data.players.now}</strong> jugadores conectados`;
+            if (data.players.now != 1) {
+                playersEl.innerHTML = `<strong>${data.players.now}</strong> jugadores conectados`;
+            }
+            else{
+              playersEl.innerHTML = `<strong>${data.players.now}</strong> jugador conectado`;
+            }
         } else {
             statusEl.innerHTML = '<span style="color: #d43c37;">● Offline</span>';
             playersEl.innerText = "";
