@@ -7,6 +7,7 @@
     --title-background: #6f9c7d;
     --window-border: #4c6e58;
     --white: #fff;
+    --apagado: #0000008c;
 }
 
 html, body {
@@ -73,11 +74,24 @@ html, body {
     background-color: var(--white);
     border: 2px solid var(--window-border);
     border-top: 0;
-    padding: 0 20px;
+    padding: 4px 20px;
 }
 
 .window-body p {
-    font-size: 12px;
+    font-size: 11px;
+}
+
+.window-body ul {
+    margin: 0;
+}
+
+.window-body ul li::marker { 
+    color: #4c6e58;
+}
+
+.window-body ul li {
+    list-style-type: square;
+    font-size: 11px;
 }
 
 .window-title, .window-body, .introduction img {
@@ -92,5 +106,14 @@ html, body {
 }
 
 .end p {
+    color: var(--apagado);
     margin-top: 0;
+}
+
+.end p a {
+    color: #4c6e58;
+}
+
+.end p a:hover {
+    color: #6f9c7d;
 }
