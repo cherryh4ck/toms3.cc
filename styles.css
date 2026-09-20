@@ -1,7 +1,18 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url(resources/Coolvetica.woff2);
+}
+
+:root {
+    --title-background: #6f9c7d;
+    --window-border: #4c6e58;
+    --white: #fff;
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(180deg, #ccdbe7 0%, #f0f2f5 100%);
+    background: linear-gradient(180deg, #d4ddd1 0%, #f1f3ef 100%);
     width: 100%;
     min-height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -11,8 +22,20 @@ html, body {
 
 .introduction {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.introduction h1 {
+    font-family: Coolvetica;
+    font-size: 42px;
+    margin: 10px 0 0;
+    color: var(--white);
+    -webkit-text-stroke: 4px #272626;
+    paint-order: stroke fill;
+    text-shadow: 2px 0 #272626, -2px 0 #272626, 0 2px #272626, 0 -2px #272626,
+             1px 1px #272626, -1px -1px #272626, 1px -1px #272626, -1px 1px #272626;
 }
 
 .introduction img {
@@ -35,9 +58,9 @@ html, body {
 .window-title {
     width: 50%;
     padding: 0 20px;
-    background-color: #529ac4;
-    border: 2px solid #4c6e81;
-    color: #fff;
+    background-color: var(--title-background);
+    border: 2px solid var(--window-border);
+    color: var(--white);
 }
 
 .window-title h1 {
@@ -48,8 +71,8 @@ html, body {
 .window-body {
     width: 50%;
     min-height: 600px;
-    background-color: #fff;
-    border: 2px solid #4c6e81;
+    background-color: var(--white);
+    border: 2px solid var(--window-border);
     border-top: 0;
     padding: 0 20px;
 }
