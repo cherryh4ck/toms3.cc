@@ -34,8 +34,7 @@ html, body {
     color: var(--white);
     -webkit-text-stroke: 4px #272626;
     paint-order: stroke fill;
-    text-shadow: 2px 0 #272626, -2px 0 #272626, 0 2px #272626, 0 -2px #272626,
-             1px 1px #272626, -1px -1px #272626, 1px -1px #272626, -1px 1px #272626;
+    text-shadow: 3px 3px 2px rgba(84, 88, 81, 0.212);
 }
 
 .introduction img {
@@ -79,6 +78,10 @@ html, body {
 
 .window-body p {
     font-size: 12px;
+}
+
+.window-title, .window-body, .introduction img {
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.15);
 }
 
 /* pobre footer */
