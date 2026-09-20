@@ -1,10 +1,10 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(180deg,rgb(181, 212, 149) 0%, rgb(147, 179, 116) 50%, rgb(128, 151, 104) 100%);
+    background: linear-gradient(180deg, #ccdbe7 0%, #f0f2f5 100%);
     width: 100%;
     min-height: 100vh;
-    font-family: "Tahoma", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* header */
@@ -29,14 +29,15 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: red;
     padding: 25px 0;
 }
 
 .window-title {
     width: 50%;
     padding: 0 20px;
-    background-color: burlywood;
+    background-color: #529ac4;
+    border: 2px solid #4c6e81;
+    color: #fff;
 }
 
 .window-title h1 {
@@ -47,12 +48,14 @@ html, body {
 .window-body {
     width: 50%;
     min-height: 600px;
-    background-color: gray;
+    background-color: #fff;
+    border: 2px solid #4c6e81;
+    border-top: 0;
     padding: 0 20px;
 }
 
 .window-body p {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 /* pobre footer */
