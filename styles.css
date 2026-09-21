@@ -97,6 +97,11 @@ html, body {
     font-size: 11px;
 }
 
+.window-body p img {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
 .window-body p a {
     color: #4c6e58;
     text-decoration: none;
