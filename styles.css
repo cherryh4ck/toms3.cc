@@ -175,6 +175,9 @@ html, body {
     background-color: var(--title-background);
     border: 2px solid var(--window-border);
     color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .popup-title h1 {
@@ -195,4 +198,50 @@ html, body {
 
 .popup-body p {
     font-size: 11px;
+}
+
+.popup-close {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 13px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.popup-close:hover {
+    color: #272626;
+}
+
+.popup-body-content {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.popup-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: auto;
+    margin-bottom: 11px;
+}
+
+.popup-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    color: var(--white);
+    background: linear-gradient(180deg, #8fb89b 0%, var(--title-background) 100%);
+    border: 1px solid var(--window-border);
+    padding: 4px 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.popup-button:hover {
+    background: linear-gradient(180deg, #9fc7ab 0%, #7aab88 100%);
+}
+
+.popup-button:active {
+    background: var(--window-border);
 }
