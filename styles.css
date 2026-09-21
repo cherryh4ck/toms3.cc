@@ -64,11 +64,14 @@ html, body {
 }
 
 .window-title h1 {
-    font-size: 16px;
+    font-size: 13px;
     text-align: center;
 }
 
 .window-body {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
     width: 50%;
     min-height: 600px;
     background-color: var(--white);
@@ -77,8 +80,31 @@ html, body {
     padding: 4px 20px;
 }
 
+.window-body > * {
+    margin: 0;
+}
+
+.window-body-start {
+    margin-top: 11px;
+}
+
+.window-body-end {
+    margin-top: auto;
+    margin-bottom: 11px;
+}
+
 .window-body p {
     font-size: 11px;
+}
+
+.window-body p a {
+    color: #4c6e58;
+    text-decoration: none;
+}
+
+.window-body p a:hover {
+    color: #6f9c7d;
+    text-decoration: underline;
 }
 
 .window-body ul {
