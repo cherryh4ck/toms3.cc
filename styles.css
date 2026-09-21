@@ -148,3 +148,51 @@ html, body {
 .end p a:hover {
     color: #6f9c7d;
 }
+
+/* popups */
+
+.popup-window {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-container {
+    padding: 25px 0;
+}
+
+.popup-title {
+    width: 240px;
+    padding: 0 20px;
+    background-color: var(--title-background);
+    border: 2px solid var(--window-border);
+    color: var(--white);
+}
+
+.popup-title h1 {
+    font-size: 12px;
+}
+
+.popup-body {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 240px;
+    min-height: 80px;
+    background-color: var(--white);
+    border: 2px solid var(--window-border);
+    border-top: 0;
+    padding: 4px 20px;
+}
+
+.popup-body p {
+    font-size: 11px;
+}
