@@ -37,6 +37,10 @@ html, body {
     -webkit-text-stroke: 4px #272626;
     paint-order: stroke fill;
     text-shadow: 3px 3px 2px rgba(84, 88, 81, 0.212);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .introduction img {
