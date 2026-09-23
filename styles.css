@@ -107,6 +107,10 @@ html, body {
     font-size: 11px;
 }
 
+.window-body p b {
+    color: rgb(59, 58, 58);
+}
+
 .window-body p img {
     image-rendering: pixelated;
     image-rendering: crisp-edges;
@@ -216,6 +220,10 @@ html, body {
 
 .popup-body p {
     font-size: 11px;
+}
+
+.popup-body p b {
+    color: rgb(59, 58, 58);
 }
 
 .popup-close {
