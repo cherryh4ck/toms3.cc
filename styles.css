@@ -93,6 +93,11 @@ html, body {
     margin-top: 11px;
 }
 
+#toms3-note {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.65);
+}
+
 .window-body-end {
     margin-top: auto;
     margin-bottom: 11px;
