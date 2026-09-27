@@ -102,14 +102,13 @@ html, body {
 
 .window-body-end {
     margin-top: auto;
-    margin-bottom: 11px;
 }
 
 .window-body p {
     font-size: 11px;
 }
 
-.window-body p b {
+.window-body p b, .window-body ul li b {
     color: rgb(59, 58, 58);
 }
 
@@ -118,12 +117,12 @@ html, body {
     image-rendering: crisp-edges;
 }
 
-.window-body p a {
+.window-body p a, .window-body ul li a {
     color: #4c6e58;
     text-decoration: none;
 }
 
-.window-body p a:hover {
+.window-body p a:hover, .window-body ul li a:hover {
     color: #6f9c7d;
     text-decoration: underline;
 }
@@ -143,6 +142,11 @@ html, body {
 
 .window-title, .window-body, .introduction img {
     box-shadow: 3px 3px 8px rgba(0,0,0,0.15);
+}
+
+#contact-list {
+    margin-top: 0;
+    margin-bottom: 11px;
 }
 
 /* pobre footer */
