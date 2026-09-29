@@ -169,6 +169,39 @@ html, body {
     color: #6f9c7d;
 }
 
+/* hover block */
+
+.hover-block {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    pointer-events: none;
+    white-space: nowrap;
+    flex-direction: column;
+    align-self: flex-start;
+    background-color: #fff5b1;
+    border: 2px solid #434029;
+    border-radius: 3px;
+    padding: 2px 3px;
+    min-height: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-block.visible {
+    display: flex;
+}
+
+.hover-block p {
+    color: #434029;
+    font-size: 9px;
+    font-weight: 600;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+    font-smooth: never;
+    margin: 0;
+}
+
 /* popups */
 
 .popup-window {
