@@ -342,6 +342,37 @@ html, body {
     text-shadow: none;
 }
 
+/* 404 */
+
+#center-text {
+    text-align: center;
+}
+
+#error-image {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid var(--window-border);
+}
+
+.window-body button {
+    width: 100px;
+    height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    color: var(--white);
+    background: var(--title-background);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+    border: 1px solid var(--window-border);
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+    padding: 3px 12px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* responsive */
 
 @media (max-width: 1200px) {
