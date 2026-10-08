@@ -357,8 +357,12 @@ html, body {
 }
 
 .window-body button {
+    display: flex;
     width: 100px;
     height: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
     color: var(--white);
