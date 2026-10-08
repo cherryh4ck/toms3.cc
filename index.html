@@ -7,8 +7,7 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="styles.css">
   <!--- scripts -->
-  <script src="js/donatePopup.js" defer></script>
-  <script src="js/warningPopup.js" defer></script>
+  <script src="js/popups.js" defer></script>
   <script src="js/noTitle.js" defer></script>
   <script src="js/hover.js" defer></script>
   <!--- ackee analytics -->
@@ -61,7 +60,7 @@
         <li><a href="#" data-hover="toms3.cc anarchy server no longer exists ;(<br>but we have plans to run a new (invite and premium only) server!">Minecraft (in the past)</a></li>
       </ul>
       <p>As of now, we are currently hosting a total of <b>6</b> gameservers.<br>All of our gameservers are public and hosted in <img src="resources/icons/flags/us.png" width="17" height="11" draggable="false">.</p>
-      <p>Want to be part of toms3.cc? Join our <a href="https://steamcommunity.com/groups/toms3CC" target="_blank">Steam group</a> or our <a href="javascript:openWarningPopup();">Discord</a>. We also have our <a href="https://board.toms3.cc" target="_blank">own forums</a>.</p>
+      <p>Want to be part of toms3.cc? Join our <a href="https://steamcommunity.com/groups/toms3CC" target="_blank">Steam group</a> or our <a href="javascript:openDiscordPopup();">Discord</a>. We also have our <a href="https://board.toms3.cc" target="_blank">own forums</a>.</p>
       <p>Our donators:</p>
       <ul>
         <li><a href="https://guns.lol/edx.dll" target="_blank" data-hover="our big and only donator!">Eidanex</a></li>
@@ -80,34 +79,16 @@
   
   <!-- All data stuff yk !! -->
   <div class="hover-block"><p></p></div>
-  <div id="donate-popup" class="popup-window">
+  <div id="popup" class="popup-window">
       <div class="popup-container">
           <div class="popup-title">
-              <h1>Donations</h1>
-              <button class="popup-close" onclick="closeDonatePopup()">✕</button>
+              <h1 id="popup-title"></h1>
+              <button class="popup-close" onclick="closePopup()">✕</button>
           </div>
           <div class="popup-body">
-              <div class="popup-body-content">
-                  <p>Donation links:<br><a href="https://steamcommunity.com/tradeoffer/new/?partner=1781797079&token=1fTVqckz" target="_blank">Steam Trade</a><br><a href="https://paypal.me/tomatito32k" target="_blank">PayPal</a></p>
-              </div>
+              <div id="popup-body-content" class="popup-body-content"></div>
               <div class="popup-actions">
-                  <button class="popup-button" onclick="closeDonatePopup()">OK</button>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div id="warning-popup" class="popup-window">
-      <div class="popup-container">
-          <div class="popup-title">
-              <h1>Warning!</h1>
-              <button class="popup-close" onclick="closeWarningPopup()">✕</button>
-          </div>
-          <div class="popup-body">
-              <div class="popup-body-content">
-                  <p>Please note that the server may <b>not</b> be suitable for all users.<br><br>By clicking <b>OK</b>, you agree to proceed.</p>
-              </div>
-              <div class="popup-actions">
-                  <button class="popup-button" onclick="openDiscord()">OK</button>
+                  <button id="popup-button" class="popup-button" onclick="closePopup()">OK</button>
               </div>
           </div>
       </div>
