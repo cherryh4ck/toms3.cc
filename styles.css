@@ -118,6 +118,12 @@ html, body {
     image-rendering: crisp-edges;
 }
 
+.window-body p img, .window-body ul li img {
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
 .window-body p a, .window-body ul li a {
     color: #4c6e58;
     text-decoration: none;
