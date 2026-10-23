@@ -151,6 +151,12 @@ html, body {
     box-shadow: 3px 3px 8px rgba(0,0,0,0.15);
 }
 
+.game-list li a {
+    display: inline-flex; 
+    align-items: center; 
+    gap: 4px;
+}
+
 #contact-list {
     margin-top: 0;
     margin-bottom: 11px;
