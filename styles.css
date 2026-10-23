@@ -471,6 +471,10 @@ html, body {
         width: 90vw;
         max-width: 280px;
     }
+
+    .end-line {
+        width: 80%;
+    }
 }
 
 @media (max-height: 900px) {
