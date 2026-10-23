@@ -169,6 +169,16 @@ html, body {
     font-size: 10px;
 }
 
+.end-line {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 45%;
+    height: 1px;
+    background-color: var(--window-border);
+}
+
 .end p {
     color: var(--apagado);
     margin-top: 0;
