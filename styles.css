@@ -109,7 +109,7 @@ html, body {
     font-size: 11px;
 }
 
-.window-body p b, .window-body ul li b {
+.window-body p b, .window-body ul li b, .faq-block span b {
     color: rgb(59, 58, 58);
 }
 
@@ -124,12 +124,12 @@ html, body {
     top: -1px;
 }
 
-.window-body p a, .window-body ul li a {
+.window-body p a, .window-body ul li a, .faq-block span a {
     color: #4c6e58;
     text-decoration: none;
 }
 
-.window-body p a:hover, .window-body ul li a:hover {
+.window-body p a:hover, .window-body ul li a:hover, .faq-block span a:hover {
     color: #6f9c7d;
     text-decoration: underline;
 }
@@ -398,6 +398,18 @@ html, body {
     text-decoration: none;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* faq */
+
+.faq-block span {
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-left: var(--title-background) solid 2px;
+    font-size: 13px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone; 
 }
 
 /* responsive */
