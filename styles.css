@@ -404,10 +404,10 @@ html, body {
 
 .faq-block span {
     padding-left: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     border-left: var(--title-background) solid 2px;
-    font-size: 13px;
+    font-size: 11px;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone; 
 }
