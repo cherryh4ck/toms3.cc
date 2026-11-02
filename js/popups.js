@@ -1,4 +1,6 @@
 const popup = document.getElementById("popup");
+const popup_title_window = document.getElementsByClassName("popup-title")[0];
+const popup_body_window = document.getElementsByClassName("popup-body")[0];
 const popup_title = document.getElementById("popup-title");
 const popup_body_content = document.getElementById("popup-body-content");
 let popup_body_button = document.getElementById("popup-button");
@@ -7,7 +9,10 @@ function openExternalWindow(url) {
     window.open(url);
 }
 
-function openPopup() {
+function openPopup(width = "280px") {
+    popup_title_window.style.width = width; 
+    popup_body_window.style.width = width;
+    console.log(popup_body_window.width);
     popup.style.display = "flex";
 }
 
@@ -25,7 +30,7 @@ function openDonatePopup() {
     const body_text = document.createElement("p");
     body_text.innerHTML = 'Donation links:<br><a href="https://steamcommunity.com/tradeoffer/new/?partner=1781797079&token=1fTVqckz" target="_blank">Steam Trade</a><br><a href="https://paypal.me/tomatito32k" target="_blank">PayPal</a><br><br>By donating, you will appear on our donator list, receive the "Supporter" role on our Discord and get exclusive access to our private utilities.';
     popup_body_content.appendChild(body_text);
-    openPopup();
+    openPopup("500px");
 }
 
 function openDiscordPopup() {
