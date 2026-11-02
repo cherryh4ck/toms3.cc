@@ -23,7 +23,7 @@ function closePopup() {
 function openDonatePopup() {
     popup_title.textContent = "Donations";
     const body_text = document.createElement("p");
-    body_text.innerHTML = 'Donation links:<br><a href="https://steamcommunity.com/tradeoffer/new/?partner=1781797079&token=1fTVqckz" target="_blank">Steam Trade</a><br><a href="https://paypal.me/tomatito32k" target="_blank">PayPal</a>';
+    body_text.innerHTML = 'Donation links:<br><a href="https://steamcommunity.com/tradeoffer/new/?partner=1781797079&token=1fTVqckz" target="_blank">Steam Trade</a><br><a href="https://paypal.me/tomatito32k" target="_blank">PayPal</a><br><br>By donating, you will appear on our donator list, receive the "Supporter" role on our Discord and get exclusive access to our private utilities.';
     popup_body_content.appendChild(body_text);
     openPopup();
 }
