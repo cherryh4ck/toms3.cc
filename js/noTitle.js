@@ -6,8 +6,7 @@ const faq_href = document.getElementById("faq-href");
 
 if (params.has("no-title")) {
     title.style.display = "none";
-}
-
-if (faq_href) {
-    faq_href.href = "faq?no-title";
+    if (faq_href) {
+        faq_href.href = "faq?no-title";
+    }
 }
