@@ -157,6 +157,10 @@ html, body {
     gap: 4px;
 }
 
+.game-list li a:hover img {
+    filter: brightness(1.3);
+}
+
 #contact-list {
     margin-top: 0;
     margin-bottom: 11px;
